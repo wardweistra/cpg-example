@@ -23,7 +23,7 @@ define "Prohibitions For Daily Apple Order":
       and M.status = 'active'
       and M.doNotPerform is true
 
-define "No Daily Apple Order":
+define "Should Recommend Daily Apple Order":
   "Inclusion Criteria"
     and not exists ("Active Daily Apple Order")
     and not exists ("Prohibitions For Daily Apple Order")
